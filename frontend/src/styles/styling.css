@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(
+      rgba(42, 31, 94, 0.85),
+      rgba(74, 47, 141, 0.85)
+    ),
+    url("https://i.pinimg.com/1200x/07/05/0c/07050c71b5cd7160ec9d07033b8f9b1f.jpg")
+      center/cover no-repeat;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.medical-home {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  /* margin-left: 50px; */
+}
+
+.logo-text {
+  font-size: 1.9rem;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #ffffff;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+/* BUTTONS */
+.login-button-top,
+.rules-button {
+  padding: 8px 20px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.rules-button {
+  background-color: transparent;
+  border: 2px solid #00b4d8;
+  color: #00b4d8;
+}
+
+.login-button-top:hover {
+  background-color: #0096c7;
+}
+
+.rules-button:hover {
+  background-color: #00b4d8;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* HERO SECTION */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.redefined {
+  color: #00b4d8;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #a3bffa;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.get-started-button {
+  padding: 12px 30px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #0096c7;
+  transform: scale(1.05);
+}
+
+/* RULES PAGE */
+.rules-page {
+  padding: 40px;
+  color: #fff;
+  background: linear-gradient(135deg, #2a1f5e, #4a2f8d);
+  min-height: 100vh;
+}
+
+.rules-content {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+}
+
+.rules-content h1 {
+  font-size: 2rem;
+  color: #00b4d8;
+  margin-bottom: 10px;
+}
+
+.intro-text {
+  color: #a3bffa;
+  margin-bottom: 20px;
+}
+
+.rules-list {
+  list-style: none;
+  padding: 0;
+  line-height: 1.8;
+}
+
+.rules-list li {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+  }
+
+  .get-started-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .login-button-top,
+  .rules-button {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .rules-content {
+    padding: 20px;
+    
+  }
+
+  
+}

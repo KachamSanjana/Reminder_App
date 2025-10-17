@@ -1,0 +1,129 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #34325f 0%, #f5576c 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.register-container::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  top: -200px;
+  left: -200px;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+.register-container::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  bottom: -175px;
+  right: -175px;
+  animation: pulse 5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+  animation: slideUp 0.5s ease-out;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.register-header h1 {
+  font-size: 32px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.register-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.register-btn {
+  padding: 16px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(240, 147, 251, 0.4);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+.register-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.register-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.register-footer p {
+  color: #666;
+  font-size: 14px;
+}
+
+.register-footer .link {
+  color: #f5576c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.register-footer .link:hover {
+  color: #f093fb;
+  text-decoration: underline;
+}
