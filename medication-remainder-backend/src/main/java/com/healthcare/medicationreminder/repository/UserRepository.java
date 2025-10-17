@@ -1,0 +1,25 @@
+package com.healthcare.medicationreminder.repository;
+
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.healthcare.medicationreminder.model.User;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+
+	Optional<User> findByUsername(String username);
+Optional<User> findByEmail(String email);
+    
+    // Check if username already exists
+    Boolean existsByUsername(String username);
+    
+    // Check if email already exists
+    Boolean existsByEmail(String email);
+    
+    // Find user by username or email (for login)
+    Optional<User> findByUsernameOrEmail(String username, String email);
+}
